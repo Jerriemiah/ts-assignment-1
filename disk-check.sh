@@ -30,9 +30,9 @@ disk_usage=$(df -h "$path" | awk 'NR==2 {print $5}' | sed 's/%//')
 echo "Current disk usage of filesystem: $disk_usage%"
 
 if [[ "$disk_usage" -lt "$threshold" ]]; then
-    echo "info: usage is below the threshold"
+    echo "Info: usage is below the threshold"
     exit 0
 else
-    echo "warning: usage is above the threshold"
+    echo "Warning: usage reaches or exceeds the threshold"
     exit 1
 fi
