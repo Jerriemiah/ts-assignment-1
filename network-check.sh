@@ -19,7 +19,7 @@ if [[ ! "$host" =~ $REGEX_IP ]] && [[ ! "$host" =~ $REGEX_HOSTNAME ]]; then
     exit 2
 fi
 
-port=${2:-80}
+port=${2}
 
 if [[ ! "$port" =~ ^[0-9]+$ ]]; then
     echo "Error: Port must be a positive integer"
@@ -31,6 +31,56 @@ if [[ "$port" -lt 1 ]] || [[ "$port" -gt 65535 ]]; then
     exit 2
 fi
 
+lookup=$(dig "$host" +short 2>/dev/null | grep -oE '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}')
+if [[ -n "$lookup" ]]; then
+    echo "Resolving hostname $host to IP address: $lookup"
+    echo "__________________________________________________________"
+    echo "Resolved lookup for $host: $lookup"
+elif [[ -z "$lookup" ]]; then
+    lookup=$(getent hosts "$host" | awk '{ print $1 }')
+    echo "Resolved lookup for $host: $lookup"
+else
+    echo "Error: Unable to resolve hostname $host"
+    exit 2
+fi
 
+echo ""
 
-echo "Nework Interface Check"
+echo "_____________Checking network connection to $host ...____________"
+echo "Pinging $host ..."
+ping=$(ping -c 2 "$host" >/dev/null 2>&1 && echo "Success" || echo "Failed")
+echo "Ping result: $ping"
+
+if [[ "$ping" == "Success" ]]; then
+    echo "Network connection to $host is successful."
+else
+    echo "Network connection to $host failed."
+    exit 1
+fi
+
+echo ""
+
+echo "__________Network Interface Information:__________"
+ifconfig_output=$(ifconfig 2>/dev/null)
+if [[ -n "$ifconfig_output" ]]; then
+    echo "$ifconfig_output"
+else
+    echo "Error: Unable to retrieve network interface information."
+fi
+
+echo ""
+
+if [[ -n "$port" ]]; then
+    echo "__________Port Check:__________"
+    echo "Checking port $port on $host..."
+    nc -zv "$host" "$port" >/dev/null 2>&1
+    if [[ $? -eq 0 ]]; then
+        echo "TCP connection to $host on port $port is successful."
+        echo "Port $port on $host is open."
+    else
+        echo "TCP connection to $host on port $port failed."
+        echo "Port $port on $host is closed or unreachable."
+    fi
+fi
+
+# echo "Network Interface Check"
