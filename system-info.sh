@@ -1,5 +1,10 @@
 #!/bin/bash
 
+mkdir -p ./logs
+
+# Redirect all subsequent stdout and stderr to the log file
+exec > >(tee -a "./logs/system-info.log-$(date +%Y-%m-%d_%H-%M-%S)" 2>&1)
+
 echo "System Information"
 echo "------------------"
 # Display the hostname
@@ -23,5 +28,3 @@ echo "Available Disk Space: $(df -h / | awk 'NR==2 {print $4}')"
 # Display current working directory
 echo "Current Working Directory: $(pwd)"
 echo "------------------"
-
-

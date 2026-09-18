@@ -4,6 +4,12 @@
 # This script checks the network connection by pinging a specified host and reports if the connection is successful or not.
 # Usage: ./network-check.sh <hostname-or-ip> [port]
 
+mkdir -p ./logs
+
+# Redirect all subsequent stdout and stderr to the log file
+exec > >(tee -a "./logs/network-check.log") 2>&1
+echo "===== Network check started: $(date '+%Y-%m-%d %H:%M:%S') ====="
+
 REGEX_IP="^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$"
 REGEX_HOSTNAME="^(([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9\-]*[a-zA-Z0-9])\.)*([A-Za-z0-9]|[A-Za-z0-9][A-Za-z0-9\-]*[A-Za-z0-9])$"
 
@@ -16,18 +22,6 @@ host=$1
 
 if [[ ! "$host" =~ $REGEX_IP ]] && [[ ! "$host" =~ $REGEX_HOSTNAME ]]; then
     echo "Error: Invalid hostname or IP address"
-    exit 2
-fi
-
-port=${2}
-
-if [[ ! "$port" =~ ^[0-9]+$ ]]; then
-    echo "Error: Port must be a positive integer"
-    exit 2
-fi
-
-if [[ "$port" -lt 1 ]] || [[ "$port" -gt 65535 ]]; then
-    echo "Error: Port must be between 1 and 65535"
     exit 2
 fi
 
@@ -68,7 +62,24 @@ else
     echo "Error: Unable to retrieve network interface information."
 fi
 
+echo "Ping localhost (127.0.0.1):"
+ping -c 2 127.0.0.1 >/dev/null 2>&1 && echo "Success" || echo "Failed"
+
 echo ""
+
+port=${2:-}
+
+if [[ -n "$port" ]]; then
+    if [[ ! "$port" =~ ^[0-9]+$ ]]; then
+        echo "Error: Port must be a positive integer"
+        exit 2
+    fi
+
+    if [[ "$port" -lt 1 ]] || [[ "$port" -gt 65535 ]]; then
+        echo "Error: Port must be between 1 and 65535"
+        exit 2
+    fi
+fi
 
 if [[ -n "$port" ]]; then
     echo "__________Port Check:__________"
@@ -83,4 +94,3 @@ if [[ -n "$port" ]]; then
     fi
 fi
 
-# echo "Network Interface Check"

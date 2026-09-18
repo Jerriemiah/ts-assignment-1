@@ -1,0 +1,9 @@
+===== Disk check started: 2026-09-18 16:11:02 =====
+______________________________
+Disk Usage percentage
+Usage: ./disk-check.sh <threshold_percentage> [path]
+===== Disk check started: 2026-09-18 16:11:06 =====
+______________________________
+Disk Usage percentage
+Current disk usage of filesystem: 5%
+Info: Current disk usage is above the provided threshold

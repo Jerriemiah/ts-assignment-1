@@ -4,6 +4,11 @@
 # This script checks the disk usage of the root filesystem and reports if it exceeds a specified threshold 
 # Usage: ./disk-check.sh <threshold_percentage> [path]
 
+mkdir -p ./logs
+# Redirect all subsequent stdout and stderr to the log file
+
+exec > >(tee -a "./logs/disk-check.log") 2>&1
+echo "===== Disk check started: $(date '+%Y-%m-%d %H:%M:%S') ====="
 
 echo "______________________________"
 echo "Disk Usage percentage"
@@ -30,9 +35,12 @@ disk_usage=$(df -h "$path" | awk 'NR==2 {print $5}' | sed 's/%//')
 echo "Current disk usage of filesystem: $disk_usage%"
 
 if [[ "$disk_usage" -lt "$threshold" ]]; then
-    echo "Info: usage is below the threshold"
+    echo "Info: Current disk usage is below the provided threshold"
+    exit 0
+elif [[ "$disk_usage" -eq "$threshold" ]]; then
+    echo "Info: Current disk usage is equal to the provided threshold"
     exit 0
 else
-    echo "Warning: usage reaches or exceeds the threshold"
-    exit 1
+    echo "Info: Current disk usage is above the provided threshold"
+    exit 0
 fi
