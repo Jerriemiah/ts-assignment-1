@@ -41,3 +41,366 @@ lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
 Ping localhost (127.0.0.1):
 Success
 
+===== Network check started: 2026-09-28 16:13:18 =====
+Usage: ./network-check.sh <hostname-or-ip> [port]
+===== Network check started: 2026-09-28 16:13:18 =====
+Resolved lookup for localhost: 127.0.0.1
+
+_____________Checking network connection to localhost ...____________
+Pinging localhost ...
+Ping result: Success
+Network connection to localhost is successful.
+
+__________Network Interface Information:__________
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 172.25.65.151  netmask 255.255.240.0  broadcast 172.25.79.255
+        inet6 fe80::215:5dff:fe53:33ec  prefixlen 64  scopeid 0x20<link>
+        ether 00:15:5d:53:33:ec  txqueuelen 1000  (Ethernet)
+        RX packets 49653  bytes 24041949 (24.0 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 37522  bytes 39204632 (39.2 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 186364  bytes 232442102 (232.4 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 186364  bytes 232442102 (232.4 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+Ping localhost (127.0.0.1):
+Success
+
+===== Network check started: 2026-09-28 16:13:20 =====
+Resolved lookup for localhost: 127.0.0.1
+
+_____________Checking network connection to localhost ...____________
+Pinging localhost ...
+Ping result: Success
+Network connection to localhost is successful.
+
+__________Network Interface Information:__________
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 172.25.65.151  netmask 255.255.240.0  broadcast 172.25.79.255
+        inet6 fe80::215:5dff:fe53:33ec  prefixlen 64  scopeid 0x20<link>
+        ether 00:15:5d:53:33:ec  txqueuelen 1000  (Ethernet)
+        RX packets 49655  bytes 24042248 (24.0 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 37524  bytes 39204793 (39.2 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 186384  bytes 232443637 (232.4 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 186384  bytes 232443637 (232.4 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+Ping localhost (127.0.0.1):
+Success
+
+Error: Port must be between 1 and 65535
+===== Network check started: 2026-09-28 16:13:22 =====
+Resolved lookup for localhost: 127.0.0.1
+
+_____________Checking network connection to localhost ...____________
+Pinging localhost ...
+Ping result: Success
+Network connection to localhost is successful.
+
+__________Network Interface Information:__________
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 172.25.65.151  netmask 255.255.240.0  broadcast 172.25.79.255
+        inet6 fe80::215:5dff:fe53:33ec  prefixlen 64  scopeid 0x20<link>
+        ether 00:15:5d:53:33:ec  txqueuelen 1000  (Ethernet)
+        RX packets 49658  bytes 24042589 (24.0 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 37527  bytes 39204996 (39.2 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 186400  bytes 232445021 (232.4 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 186400  bytes 232445021 (232.4 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+Ping localhost (127.0.0.1):
+Success
+
+Error: Port must be between 1 and 65535
+===== Network check started: 2026-09-28 16:13:25 =====
+Resolved lookup for localhost: 127.0.0.1
+
+_____________Checking network connection to localhost ...____________
+Pinging localhost ...
+Ping result: Success
+Network connection to localhost is successful.
+
+__________Network Interface Information:__________
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 172.25.65.151  netmask 255.255.240.0  broadcast 172.25.79.255
+        inet6 fe80::215:5dff:fe53:33ec  prefixlen 64  scopeid 0x20<link>
+        ether 00:15:5d:53:33:ec  txqueuelen 1000  (Ethernet)
+        RX packets 49661  bytes 24042930 (24.0 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 37530  bytes 39205199 (39.2 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 186418  bytes 232446334 (232.4 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 186418  bytes 232446334 (232.4 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+Ping localhost (127.0.0.1):
+Success
+
+Error: Port must be a positive integer
+===== Network check started: 2026-09-28 16:13:56 =====
+Usage: ./network-check.sh <hostname-or-ip> [port]
+===== Network check started: 2026-09-28 16:13:56 =====
+Resolved lookup for localhost: 127.0.0.1
+
+_____________Checking network connection to localhost ...____________
+Pinging localhost ...
+Ping result: Success
+Network connection to localhost is successful.
+
+__________Network Interface Information:__________
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 172.25.65.151  netmask 255.255.240.0  broadcast 172.25.79.255
+        inet6 fe80::215:5dff:fe53:33ec  prefixlen 64  scopeid 0x20<link>
+        ether 00:15:5d:53:33:ec  txqueuelen 1000  (Ethernet)
+        RX packets 50569  bytes 25382377 (25.3 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 37976  bytes 39235688 (39.2 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 187103  bytes 232551313 (232.5 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 187103  bytes 232551313 (232.5 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+Ping localhost (127.0.0.1):
+Success
+
+===== Network check started: 2026-09-28 16:13:58 =====
+Resolved lookup for localhost: 127.0.0.1
+
+_____________Checking network connection to localhost ...____________
+Pinging localhost ...
+Ping result: Success
+Network connection to localhost is successful.
+
+__________Network Interface Information:__________
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 172.25.65.151  netmask 255.255.240.0  broadcast 172.25.79.255
+        inet6 fe80::215:5dff:fe53:33ec  prefixlen 64  scopeid 0x20<link>
+        ether 00:15:5d:53:33:ec  txqueuelen 1000  (Ethernet)
+        RX packets 50579  bytes 25383477 (25.3 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 37993  bytes 39237112 (39.2 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 187129  bytes 232553562 (232.5 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 187129  bytes 232553562 (232.5 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+Ping localhost (127.0.0.1):
+Success
+
+Error: Port must be between 1 and 65535
+===== Network check started: 2026-09-28 16:14:00 =====
+Resolved lookup for localhost: 127.0.0.1
+
+_____________Checking network connection to localhost ...____________
+Pinging localhost ...
+Ping result: Success
+Network connection to localhost is successful.
+
+__________Network Interface Information:__________
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 172.25.65.151  netmask 255.255.240.0  broadcast 172.25.79.255
+        inet6 fe80::215:5dff:fe53:33ec  prefixlen 64  scopeid 0x20<link>
+        ether 00:15:5d:53:33:ec  txqueuelen 1000  (Ethernet)
+        RX packets 50582  bytes 25383818 (25.3 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 37996  bytes 39237315 (39.2 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 187147  bytes 232555007 (232.5 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 187147  bytes 232555007 (232.5 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+Ping localhost (127.0.0.1):
+Success
+
+Error: Port must be between 1 and 65535
+===== Network check started: 2026-09-28 16:14:03 =====
+Resolved lookup for localhost: 127.0.0.1
+
+_____________Checking network connection to localhost ...____________
+Pinging localhost ...
+Ping result: Success
+Network connection to localhost is successful.
+
+__________Network Interface Information:__________
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 172.25.65.151  netmask 255.255.240.0  broadcast 172.25.79.255
+        inet6 fe80::215:5dff:fe53:33ec  prefixlen 64  scopeid 0x20<link>
+        ether 00:15:5d:53:33:ec  txqueuelen 1000  (Ethernet)
+        RX packets 50584  bytes 25384117 (25.3 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 37998  bytes 39237476 (39.2 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 187171  bytes 232557004 (232.5 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 187171  bytes 232557004 (232.5 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+Ping localhost (127.0.0.1):
+Success
+
+Error: Port must be a positive integer
+===== Network check started: 2026-09-28 16:17:30 =====
+Usage: ./network-check.sh <hostname-or-ip> [port]
+===== Network check started: 2026-09-28 16:17:30 =====
+Resolved lookup for localhost: 127.0.0.1
+
+_____________Checking network connection to localhost ...____________
+Pinging localhost ...
+Ping result: Success
+Network connection to localhost is successful.
+
+__________Network Interface Information:__________
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 172.25.65.151  netmask 255.255.240.0  broadcast 172.25.79.255
+        inet6 fe80::215:5dff:fe53:33ec  prefixlen 64  scopeid 0x20<link>
+        ether 00:15:5d:53:33:ec  txqueuelen 1000  (Ethernet)
+        RX packets 53749  bytes 28803448 (28.8 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 39727  bytes 40499178 (40.4 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 191565  bytes 265488124 (265.4 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 191565  bytes 265488124 (265.4 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+Ping localhost (127.0.0.1):
+Success
+
+===== Network check started: 2026-09-28 16:17:33 =====
+Resolved lookup for localhost: 127.0.0.1
+
+_____________Checking network connection to localhost ...____________
+Pinging localhost ...
+Ping result: Success
+Network connection to localhost is successful.
+
+__________Network Interface Information:__________
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 172.25.65.151  netmask 255.255.240.0  broadcast 172.25.79.255
+        inet6 fe80::215:5dff:fe53:33ec  prefixlen 64  scopeid 0x20<link>
+        ether 00:15:5d:53:33:ec  txqueuelen 1000  (Ethernet)
+        RX packets 53766  bytes 28804998 (28.8 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 39750  bytes 40500581 (40.5 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 191717  bytes 265537137 (265.5 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 191717  bytes 265537137 (265.5 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+Ping localhost (127.0.0.1):
+Success
+
+Error: Port must be between 1 and 65535
+===== Network check started: 2026-09-28 16:17:35 =====
+Resolved lookup for localhost: 127.0.0.1
+
+_____________Checking network connection to localhost ...____________
+Pinging localhost ...
+Ping result: Success
+Network connection to localhost is successful.
+
+__________Network Interface Information:__________
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 172.25.65.151  netmask 255.255.240.0  broadcast 172.25.79.255
+        inet6 fe80::215:5dff:fe53:33ec  prefixlen 64  scopeid 0x20<link>
+        ether 00:15:5d:53:33:ec  txqueuelen 1000  (Ethernet)
+        RX packets 53768  bytes 28805297 (28.8 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 39752  bytes 40500742 (40.5 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 191750  bytes 265540903 (265.5 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 191750  bytes 265540903 (265.5 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+Ping localhost (127.0.0.1):
+Success
+
+Error: Port must be between 1 and 65535
+===== Network check started: 2026-09-28 16:17:37 =====
+Resolved lookup for localhost: 127.0.0.1
+
+_____________Checking network connection to localhost ...____________
+Pinging localhost ...
+Ping result: Success
+Network connection to localhost is successful.
+
+__________Network Interface Information:__________
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 172.25.65.151  netmask 255.255.240.0  broadcast 172.25.79.255
+        inet6 fe80::215:5dff:fe53:33ec  prefixlen 64  scopeid 0x20<link>
+        ether 00:15:5d:53:33:ec  txqueuelen 1000  (Ethernet)
+        RX packets 53770  bytes 28805596 (28.8 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 39754  bytes 40500903 (40.5 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 191833  bytes 265561129 (265.5 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 191833  bytes 265561129 (265.5 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+Ping localhost (127.0.0.1):
+Success
+
+Error: Port must be a positive integer

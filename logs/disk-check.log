@@ -7,3 +7,54 @@ ______________________________
 Disk Usage percentage
 Current disk usage of filesystem: 5%
 Info: Current disk usage is above the provided threshold
+===== Disk check started: 2026-09-28 16:13:17 =====
+______________________________
+Disk Usage percentage
+Error: Threshold must be between 1 and 100
+===== Disk check started: 2026-09-28 16:13:18 =====
+______________________________
+Disk Usage percentage
+Error: Threshold must be between 1 and 100
+===== Disk check started: 2026-09-28 16:13:18 =====
+______________________________
+Disk Usage percentage
+Error: Threshold must be a positive integer
+===== Disk check started: 2026-09-28 16:13:18 =====
+______________________________
+Disk Usage percentage
+Current disk usage of filesystem: 5%
+Info: Current disk usage is below the provided threshold
+===== Disk check started: 2026-09-28 16:13:56 =====
+______________________________
+Disk Usage percentage
+Error: Threshold must be between 1 and 100
+===== Disk check started: 2026-09-28 16:13:56 =====
+______________________________
+Disk Usage percentage
+Error: Threshold must be between 1 and 100
+===== Disk check started: 2026-09-28 16:13:56 =====
+______________________________
+Disk Usage percentage
+Error: Threshold must be a positive integer
+===== Disk check started: 2026-09-28 16:13:56 =====
+______________________________
+Disk Usage percentage
+Current disk usage of filesystem: 5%
+Info: Current disk usage is below the provided threshold
+===== Disk check started: 2026-09-28 16:17:30 =====
+______________________________
+Disk Usage percentage
+Error: Threshold must be between 1 and 100
+===== Disk check started: 2026-09-28 16:17:30 =====
+______________________________
+Disk Usage percentage
+Error: Threshold must be between 1 and 100
+===== Disk check started: 2026-09-28 16:17:30 =====
+______________________________
+Disk Usage percentage
+Error: Threshold must be a positive integer
+===== Disk check started: 2026-09-28 16:17:30 =====
+______________________________
+Disk Usage percentage
+Current disk usage of filesystem: 5%
+Info: Current disk usage is below the provided threshold
